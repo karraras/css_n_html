@@ -1,0 +1,179 @@
+/* start global Rules */
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* small */
+@media (min-width: 250px) {
+  .container {
+    width: 260px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .box1,
+  .container .box2,
+  .container .box3,
+  .container .box4 {
+    margin-top: 2px;
+  }
+}
+
+/* Medium */
+@media (min-width: 550px) {
+  .container {
+    width: 510px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .box1,
+  .container .box2,
+  .container .box3,
+  .container .box4 {
+    margin-top: 2px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1010px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .box1,
+  .container .box2,
+  .container .box3,
+  .container .box4 {
+    margin-top: 2px;
+  }
+}
+/* end global rules */
+
+.parent {
+  color: transparent;
+}
+.container {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.container .box4,
+.container .box3,
+.container .box2,
+.container .box1 {
+  width: 250px;
+  color: white;
+  background-color: black;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 450px;
+
+  border-right: 1px #aaa solid;
+  position: relative;
+}
+.container .box4 .detil p,
+.container .box3 .detil p,
+.container .box2 .detil p,
+.container .box1 .detil p {
+  padding: 15px;
+  width: 249px;
+  color: #9e9e9e;
+  margin: 0;
+  text-align: center;
+}
+.container .box4 .title::before,
+.container .box3 .title::before,
+.container .box2 .title::before,
+.container .box1 .title::before {
+  position: absolute;
+  content: "$";
+  left: 60px;
+  top: 95px;
+}
+.container .box1 .title::before {
+  position: absolute;
+  content: "$";
+  left: 83px;
+  top: 95px;
+}
+.container .box4 .title::after,
+.container .box3 .title::after,
+.container .box2 .title::after,
+.container .box1 .title::after {
+  position: absolute;
+  content: "/ mo";
+  left: 120px;
+  top: 107px;
+}
+.container .box1 .title::after {
+  position: absolute;
+  content: "/ mo";
+  left: 143px;
+  top: 107px;
+}
+.container hr {
+  border: none;
+  height: 1px;
+  background-color: #9e9e9e;
+  margin: 0;
+}
+
+.container .box4 .detil p:last-child,
+.container .box4 .detil p:nth-child(2),
+.container .box2 .detil p:last-child,
+.container .box2 .detil p:nth-child(2),
+.container .box1 .detil p:last-child,
+.container .box1 .detil p:nth-child(2) {
+  background-color: #2b2b2b;
+}
+.container .box4 .order,
+.container .box3 .order,
+.container .box2 .order,
+.container .box1 .order {
+  line-height: 75px;
+}
+.container .box4 .order button,
+.container .box3 .order button,
+.container .box2 .order button,
+.container .box1 .order button {
+  border: none;
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: transparent;
+  border: solid 1px #aaa;
+  color: white;
+}
+
+.container .box3 {
+  background-color: rgb(0, 119, 255);
+  height: 500px;
+  position: relative;
+  padding-top: 55px;
+  color: white;
+}
+.container .box3 .title::before {
+  top: 120px;
+}
+.container .box3 .title::after {
+  top: 132px;
+}
+.container .box3 .detil p {
+  color: rgb(0, 119, 255);
+}
+.container .box3 .detil p {
+  color: white;
+}
